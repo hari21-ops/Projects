@@ -17,5 +17,30 @@ const outsideTemp = null
 
 const id = Symbol('123')
 const anotherSymbol = Symbol('123')
-console.log(id === anotherSymbol)
+//console.log(id === anotherSymbol)
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/* MEMORY: - 
+Stack (Primitive): one over another (stores numbers, booleans, ......)
+Heap (Non-Primitive): reference variables, updating this will update original var too....
+*/
+
+let myName = "amay"
+console.log(myName)
+let anotherName = myName
+console.log(anotherName)
+anotherName = "ajay"
+console.log(anotherName)
+
+let userOne = {
+    name: "ajay",
+    email: "user@google.com"
+}
+console.log(userOne)
+
+let userTwo = userOne
+userTwo.name = "amay"
+console.log(userOne)
+console.log(userTwo)
+
 

@@ -14,4 +14,24 @@ jsUSer.location = "Navi Mumbai"
 //console.log(jsUSer["full name"]);
 //console.log(jsUSer[mySym])
 //console.log(typeof jsUSer[mySym])
-console.log(jsUSer.location);
+//console.log(jsUSer.location);
+
+/*
+Object Destructure & JSON 
+*/
+const course = {
+    instructor: "JD",
+    age: "29",
+    courseName: "Starting with C++"
+}
+
+const {instructor} = course
+console.log(instructor)
+const {courseName: name} = course
+console.log(name)
+
+
+
+
+
+

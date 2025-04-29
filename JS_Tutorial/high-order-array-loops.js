@@ -38,8 +38,24 @@ for(const key in games){
 oneArray = [1, 2, 3, 4, 5]
 
 for(const key in oneArray){
-    console.log(oneArray[key]);
+//   console.log(oneArray[key]);
 }
+
+const programming = ["JS", "CPP", "RUBY", "PYTHON"]
+
+programming.forEach( function (item) {
+//    console.log(item)
+} )
+
+function printMe(item){
+    console.log(item);
+}
+
+//programming.forEach(printMe)
+
+programming.forEach( (item, index, arr) => {
+//    console.log(item, index, arr)
+})
 
 
 

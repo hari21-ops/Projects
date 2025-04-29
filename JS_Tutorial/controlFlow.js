@@ -38,7 +38,7 @@ else if(!isUserLoggedIn && debitCard){
     console.log("Please log in first to continue");
 }
 
-
+*/
 const month = "Jan" 
 
 switch(month){
@@ -48,8 +48,11 @@ switch(month){
     case "Feb":
         console.log("Feb");
         break;
+    default:
+        console.log("Default case matched");
+        break;
 }
-*/
+
 
 /*
 Falsy Values: 

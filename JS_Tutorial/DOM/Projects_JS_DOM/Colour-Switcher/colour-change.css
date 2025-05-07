@@ -1,0 +1,51 @@
+/*.canvas {
+    display: block;
+    color: azure;
+    background-color:blanchedalmond;
+}
+
+*/
+
+.button {
+    border-color: black;
+    border-radius: 10px;
+}
+
+#orange {
+    display: inline-block;
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    padding: 15px; 
+    margin: 10px;  
+}
+
+#grey {
+    display: inline-block;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+}
+
+#yellow {
+    display: inline-block;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+}
+
+#black {
+    display: inline-block;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+

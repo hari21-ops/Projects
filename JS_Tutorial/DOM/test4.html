@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM: EDIT & REMOVE </title>
+</head>
+<body style="background-color: black; color: antiquewhite;">
+    <ul class="languages">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.languages').appendChild(li)
+    }
+
+    addLanguage("Python");
+    addLanguage("Java");
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        //const addText = (document.createTextNode(langName))
+        //li.appendChild(addText);
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.languages').appendChild(li);
+    }
+    addOptiLanguage("Golang");
+    addOptiLanguage("TypeScript");
+
+    const secondLang = document.querySelector('li:nth-child(2)');
+    //secondLang.innerHTML = "Django";
+//    newLi.textContent = "Django";
+//    secondLang.replaceWith(newLi);
+</script>
+</html>

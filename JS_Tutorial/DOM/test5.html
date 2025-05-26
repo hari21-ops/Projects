@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Events </title>
+</head>
+<body>
+    <div>
+        <ul id="images">
+            <li><img width="200px" height="200px" id="photoshop" src="https://static.vecteezy.com/system/resources/thumbnails/054/880/166/small/thriving-tree-in-lush-green-environment-nature-conservation-and-protection-concept-free-photo.jpeg" alt="photoshop"></li>
+            <li><img width="200px" height="200px" id="mount" src="https://i.pinimg.com/736x/79/fd/d1/79fdd17253b569a417e980a99aecd978.jpg"></li>
+            <li><img width="200px" height="200p" id="river" src="https://rukminim2.flixcart.com/image/850/1000/jv5k2a80/poster/d/a/7/medium-vnnatr000739c-natural-scene-original-imaffwzz3eeznzdh.jpeg?q=20&crop=false"></li>
+            <li><img width="200px" height="200px" id="waterfall" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsooqhXj4AcMB4dUR_RXhdKDaQRIQwiWRNGA&s"></li>
+            <li><img width="200px" height="200px" id="forest" src="https://i0.wp.com/dirt.asla.org/wp-content/uploads/2022/01/natural-garden_dirt.jpg?ssl=1"></li>
+            <li><img width="200px" height="200px" id="butterfly" src="https://lh6.googleusercontent.com/proxy/yqV9N0008nLUZJQ9TENhL5z6Bd4DKOzcb9JzMN47MGInP0I3Ml735R9D14rd24bY-kovEU00whgVK5tZihfr1eEBpnyCVkjZmFLafjDAl9mIWQDPvQT9d4NuSDS2b9J1nPhPL93ticCPLfc0FCdDsAvV20smkT20TLIF7DWxbGC5ZQ"></li>
+        </ul>
+    </div>
+</body>
+<script>
+//    document.querySelector('#photoshop').onclick = function(){
+//       alert("Clicked");
+//  })
+
+/*
+document.getElementById('photoshop').addEventListener("click", function(){
+    alert("clicked again !!! ")
+}, false)
+
+//attacheevent()
+//jquery - on 
+
+document.getElementById('river').addEventListener('click', function(e){
+    console.log(e);
+})
+*/
+
+//type timestamp defaultPrevent
+//target toElement srcElement currentTarget
+//clientX, Y, screenX, Y, tiltX, Y
+//altkey, ctrlkey shiftkey, keycode, 
+
+//document.querySelector('#images').addEventListener('click', function(e){
+//    console.log("clicked in side ul");
+//}, false)
+
+//change false to true and then see the result 
+//capturing is important or public is important
+
+//document.querySelector('#river').addEventListener('click', function(e){
+//    console.log("river clicked");
+//    e.stopPropogation(); //method use to stop bubbling 
+//}, false)
+
+document.getElementById('images').addEventListener('click', function(e){
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.parentNode);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id)
+        let removePic = e.target.parentNode;
+        removePic.remove()
+    }
+    
+    //removePic.parentNode.removeChild(removePic);
+
+}, false)
+
+</script>
+</html>

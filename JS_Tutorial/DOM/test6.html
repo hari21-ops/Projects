@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS Code</title>
+</head>
+<body>
+    <h1>ASYNC JS</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+
+    const sayConsole = function(){
+        console.log("Async JS");
+    }
+
+    //setTimeout(sayConsole, 2000);
+    
+    const changeText = function() {
+        document.querySelector("h1").innerHTML = "DOM, Events, Async JS" ; 
+    }
+
+    //setTimeout(changeText, 2000)
+
+    const changeH1 = setTimeout(changeText, 2000)
+
+    document.querySelector("#stop").addEventListener('click', function(){
+        clearTimeout(changeH1)
+        console.log("Stopped")
+    })
+    //document.querySelector("h1").innerHTML = "DOM, Events, Async JS"
+    //setTimeout(function(e){
+    //    console.log("Async JS");
+    //}, 2000)
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS Concepts</title>
+</head>
+<link rel="stylesheet" href="apiRequest.css">
+<body>
+    <div class="cardImg">
+        <div class="photo"></div>
+        <div class="followers"></div>
+    </div>
+
+<!--- <script>
+        let data;
+        requestUrl = "https://api.github.com/users/hari21-ops";
+        const xhr = new XMLHttpRequest()
+        xhr.open('GET', requestUrl);
+        //console.log("HERE")
+        xhr.onreadystatechange = function () {
+            //console.log(xhr.readyState);
+        
+        if(xhr.readyState === 4){
+             data = JSON.parse(this.responseText);
+            //console.log(data.followers);
+            //console.log(this.responseText);
+            //console.log(data.avtar_url);
+            //const myUrl = (this.avatar_url);
+            console.log(data.avatar_url);
+            const myLogo = data.avatar_url;
+            return data;        
+        }
+    }
+    
+//    console.log(xhr.readyState)
+        xhr.send(); 
+    </script>
+    --->
+</body>
+</html>

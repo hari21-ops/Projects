@@ -1,8 +1,8 @@
 let myName = "vadapav"
-console.log(myName.length())
+//console.log(myName.length())
 
 let myNewName = "vadapav     "
-console.log(myName.length())
+//console.log(myName.length())
 
 let myHeroes = ['thor', 'ironMan']
 
@@ -11,19 +11,19 @@ let heroPower = {
     'ironMan': 'arc reactor',
 
     getThorPower:function(){
-        console.log(`Power is: ${this.thor}`)
+//        console.log(`Power is: ${this.thor}`)
     }
 }
 
 Object.prototype.hitesh = function(){
-    console.log(`Hitesh is present in all objects`);
+//    console.log(`Hitesh is present in all objects`);
 }
 
 //heroPower.hitesh()
 //myHeroes.hitesh()
 
 Array.prototype.heyHitesh = function(){
-    console.log("Hey, Hello !")
+//    console.log("Hey, Hello !")
 }
 
 //myHeroes.heyHitesh()
@@ -57,8 +57,8 @@ Object.setPrototypeOf(teachingSupport, teacher);
 
 let anotherUserName = "GulabJam  "
 String.prototype.truelength = function(){
-    console.log(`${this}`)
-    console.log(`True length is: ${this.trim().length}`)
+//    console.log(`${this}`)
+//    console.log(`True length is: ${this.trim().length}`)
 }
 
 anotherUserName.truelength()
@@ -85,7 +85,10 @@ Array.prototype.fruitSeeds = function(){
 }
 
 fruit.fruitSeeds()
-fruitColor.fruitSeeds()
+//fruitColor.fruitSeeds()
+fruitColor.getFruitColor()
+
+
 
 
 

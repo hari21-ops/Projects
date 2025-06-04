@@ -85,7 +85,7 @@ Array.prototype.fruitSeeds = function(){
 }
 
 fruit.fruitSeeds()
-//fruitColor.fruitSeeds()
+//fruitColor.fruitSeeds() // This will not have access to fruitSeeds function as it is array's prototype function. 
 fruitColor.getFruitColor()
 
 
